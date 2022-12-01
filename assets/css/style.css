@@ -73,6 +73,7 @@ tbody > tr {
 }
 
 iframe {
+  align= "center";
   border-radius: 20px;
   width: 460px;
   height: 230px;
