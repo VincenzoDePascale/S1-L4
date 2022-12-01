@@ -4,7 +4,6 @@ body {
   font-family: Poppins, sans-serif;
   background-image: url(../img/sfondo.png);
   background-position: center;
-  width: 90vw;
   margin-right: 0px;
   padding: 10px;
 }
@@ -19,7 +18,7 @@ header {
 }
 
 header > h1 {
-  font-size: large;
+  font-size: 2em;
 }
 
 /* MAIN */
