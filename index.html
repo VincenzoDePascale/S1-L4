@@ -17,6 +17,7 @@
     />
     <title>Document</title>
   </head>
+
   <body>
     <header>
       <div>
@@ -28,110 +29,121 @@
         />
         <p>epicode - il blog dei developers</p>
       </div>
+
       <nav>
         <ul>
-          <li>⇒ Home ⇐</li>
-          <li>⇒ Articoli ⇐</li>
-          <li>⇒ Job ⇐</li>
+          <li>Home</li>
+          <li>Articoli</li>
+          <li>Job</li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <h1>Come creare un template per il post</h1>
+      <article>
+        <h1>Come creare un template per il post</h1>
+        <p class="gost">
+          <i class="fas fa-pen-square"></i> di Mario Rossi -
+          <i class="fas fa-clock"></i> publica il 25-10-2020
+        </p>
+        <div>
+          La prima cosa da fare è suddividere il blocchi logici la pagina,
+          identificando <span>le parti comuni</span> da applicare a tutte le
+          pagine
+        </div>
+
+        <div>
+          <p>Le varie aree saranno quindi suddivise in:</p>
+
+          <ul>
+            <li>
+              Contenuti di intestazione del tag <code>&lt;heared&gt;</code>
+            </li>
+            <li>
+              Contenuti centrali variabili del tag <code>&lt;main&gt;</code>
+              &lpar;corpo principale&rpar;
+            </li>
+            <li>
+              Contenuti di fine pagina comuni, da inserire nel tag
+              <code>&lt;footer&gt;</code>
+            </li>
+            <li>Formattazione del codice</li>
+          </ul>
+        </div>
+
+        <div>
+          <p>
+            Il testo dell'articolo dovrà essere formattato per identificare
+            tutte parti da <span>selezionare con i CSS</span>. Perciò i passi
+            saranno:
+          </p>
+
+          <ol>
+            <li>
+              Progettare il markup assegnando ad ogni specifico testo il tag
+              apposito
+            </li>
+            <li>
+              Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso
+              il basso
+            </li>
+            <li>Applicare gli stili CSS</li>
+          </ol>
+        </div>
+
+        <div>
+          L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere
+          la diffusione pressoché totale.
+        </div>
+
+        <table>
+          <caption>
+            Diffusione del CSS
+          </caption>
+          <thead>
+            <tr>
+              <th>Anno</th>
+              <th>% di utilizzo</th>
+              <th>Supporto Browser</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2000</td>
+              <td>20%</td>
+              <td>17%</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>35%</td>
+              <td>22%</td>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td>45%</td>
+              <td>42%</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>80%</td>
+              <td>51%</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>100%</td>
+              <td>76%</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
       <p>
-        <i class="fas fa-pen-square"></i>di Mario Rossi -
-        <i class="fas fa-clock"></i> publica il 25-10-2020
+        Un test di valutazione potrà essere fatto tramite il
+        <a href="#">tool online</a> dedicato allo scopo. Una volta ottimizzato
+        il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri
+        developers come loro:
       </p>
-      <div>
-        La prima cosa da fare è suddividere il blocchi logici la pagina,
-        identificando <span>le parti comuni</span> da applicare a tutte le
-        pagine
-      </div>
-      <!--ridurre la distanza tra prima riga e punti elenco-->
-      <div>
-        <p>Le varie aree saranno quindi suddivise in:</p>
-        <ul>
-          <li>Contenuti di intestazione del tag <code>&lt;heared&gt;</code></li>
-          <li>
-            Contenuti centrali variabili del tag <code>&lt;main&gt;</code>
-            <code>&lpar;corpo principale&rpar;</code>
-          </li>
-          <li>
-            Contenuti di fine pagina comuni, da inserire nel tag
-            <code>&lt;footer&gt;</code>
-          </li>
-          <li>Formattazione del codice</li>
-        </ul>
-      </div>
-      <!--ridurre la distanza tra prima riga e punti elenco-->
-      <div>
-        <p>
-          Il testo dell'articolo dovrà essere formattato per identificare tutte
-          le parti de selezionare con i CSS. Perciò i passi saranno:
-        </p>
-        <ul>
-          <li>
-            Progettare il markup assegnando ad ogni specifico testo il tag
-            apposito
-          </li>
-          <li>
-            Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso
-            il basso
-          </li>
-          <li>Applicare gli stili CSS</li>
-          <li>
-            L'applicazione di stili CSS è cresciuta negli anni fino a
-            raggiungere la diffusione pressoché totale.
-          </li>
-        </ul>
-      </div>
-      <table>
-        <thead>
-          <tr>
-            <th colspan="3">Diffusione del CSS</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Anno</th>
-            <th>% di utilizzo</th>
-            <th>Supporto Browser</th>
-          </tr>
-          <tr>
-            <td>2000</td>
-            <td>20%</td>
-            <td>17%</td>
-          </tr>
-          <tr>
-            <td>2002</td>
-            <td>35%</td>
-            <td>22%</td>
-          </tr>
-          <tr>
-            <td>2004</td>
-            <td>45%</td>
-            <td>42%</td>
-          </tr>
-          <tr>
-            <td>2008</td>
-            <td>80%</td>
-            <td>51%</td>
-          </tr>
-          <tr>
-            <td>2012</td>
-            <td>100%</td>
-            <td>76%</td>
-          </tr>
-        </tbody>
-      </table>
-      <div>
-        <p>
-          Un test di valutazione potrà essere fatto tramite il tool online
-          <a href="#">-LINK ESTERNO-</a> dedicato allo scopo. Una volta
-          ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere
-          stati dei veri developers come loro:
-        </p>
-      </div>
+
       <div align="center">
         <iframe
           width="250"
@@ -142,38 +154,40 @@
           allowfullscreen
         ></iframe>
       </div>
-      <form>
+
+      <div class="cantainer">
+        <p>Novità</p>
         <p>
           Vuoi rimanere aggiornato su altre novità del blog? iscriviti alla
           nostra newsletter:
         </p>
         <fieldset>
-          <input type="email" placeholder="email" /><br />
+          <input type="email" placeholder="email" />
           <button type="submit">Iscriviti</button>
         </fieldset>
-      </form>
+      </div>
+
+      <h1>Articoli correlati</h1>
+
+      <div class="cantainer">
+        <a href="#">Validare il codice HTML</a><br />
+        <i class="fas fa-tag"></i> Categoria: develop<br />
+        <p class="data"><i class="fas fa-calendar-alt"></i> Data: 18-9-2020</p>
+      </div>
+
+      <div class="cantainer">
+        <a href="#">Correggere la sintassi</a> <br />
+        <i class="fas fa-tag"></i> Categoria: develop<br />
+        <p class="data"><i class="fas fa-calendar-alt"></i> Data: 16-9-2020</p>
+      </div>
+
+      <div class="cantainer">
+        <a href="#">Meno Kb nella pagina</a> <br />
+        <i class="fas fa-tag"></i> Categoria: ottimizzazione<br />
+        <p class="data"><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</p>
+      </div>
     </main>
-    <hr />
-    <aside>
-      <div>
-        Articoli correlati <br />
-        Valkidare il codice HTML<br />
-        categoria: develop<br />
-        Data: 18-9-2020
-      </div>
-      <br />
-      <div>
-        Correggere la sintassi <br />
-        categoria: develop<br />
-        Data: 16-9-2020
-      </div>
-      <br />
-      <div>
-        Meno Kb nella pagina<br />
-        Categoria: ottimizzazione<br />
-        Data: 30-9-2020
-      </div>
-    </aside>
+
     <footer id="footer">
       <p>Blog Epicode © 2021</p>
       <p>
